@@ -1,7 +1,4 @@
 spring:
-  cloud:
-    config:
-      enabled: true
   main:
     allow-bean-definition-overriding: true
   data:
