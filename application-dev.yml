@@ -18,7 +18,7 @@ spring:
     show-sql: true
     generate-ddl: true
   profiles: 
-     active: test
+     active: dev
 logging:
   file:
     name: E:/MicroService Log/common-log.log
