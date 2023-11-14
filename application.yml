@@ -5,6 +5,7 @@ client_dateformate_hhmmss: dd-MMM-yyyy HH:mm:ss
 client_dateformate: dd-MMM-yyyy
 sql_dateformate: yyyy-MM-dd HH:mm:ss
 sql_dateformate_without_timestamp: yyyy-MM-dd
+simpleDateformate: dd-MMM-yyyy
 default_offsettime: +04:00
 date_EndTimeZone: Asia/Muscat
 
