@@ -1,3 +1,15 @@
+myapp: welcome
+
+client_dateformate_hhmm: dd-MMM-yyyy HH:mm
+client_dateformate_hhmmss: dd-MMM-yyyy HH:mm:ss
+client_dateformate: dd-MMM-yyyy
+sql_dateformate: yyyy-MM-dd HH:mm:ss
+sql_dateformate_without_timestamp: yyyy-MM-dd
+simple_dateformate: dd-MMM-yyyy
+common_dateformat: EE MMM dd HH:mm:ss z yyyy
+default_offsettime: +04:00
+date_EndTimeZone: Asia/Muscat
+
 spring:
   main:
     allow-bean-definition-overriding: true
@@ -17,11 +29,14 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
     generate-ddl: true
-  profiles: 
-     active: dev
+  profiles:
+    active: test 
+    
 logging:
   file:
     name: E:/MicroService Log/common-log.log
+#  pattern:
+#    level: '%5p [${spring.application.name}, %X{traceId}:-}, %X{spanId:-}]'
     
 eureka:
   instance:
@@ -33,3 +48,11 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#  tracing:
+#    sampling:
+#      probability: 1.0
