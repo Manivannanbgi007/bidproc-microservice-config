@@ -25,8 +25,8 @@ spring:
 logging:
   file:
     name: E:/MicroService Log/common-log.log
-  pattern:
-    level: '%5p [${spring.application.name}, %X{traceId}:-}, %X{spanId:-}]'
+#  pattern:
+#    level: '%5p [${spring.application.name}, %X{traceId}:-}, %X{spanId:-}]'
     
 eureka:
   instance:
@@ -43,6 +43,6 @@ management:
     web:
       exposure:
         include: '*'
-  tracing:
-    sampling:
-      probability: 1.0
+#  tracing:
+#    sampling:
+#      probability: 1.0
