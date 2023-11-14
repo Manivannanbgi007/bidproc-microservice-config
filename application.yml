@@ -3,7 +3,7 @@ myapp: welcome
 client_dateformate_hhmm: dd-MMM-yyyy HH:mm
 client_dateformate_hhmmss: dd-MMM-yyyy HH:mm:ss
 client_dateformate: dd-MMM-yyyy
-simple_dateformate: yyyy-MM-dd HH:mm:ss
+sql_dateformate: yyyy-MM-dd HH:mm:ss
 simple_dateformate_without_timestamp: yyyy-MM-dd
 common_dateformat: EE MMM dd HH:mm:ss z yyyy
 default_offsettime: +04:00
