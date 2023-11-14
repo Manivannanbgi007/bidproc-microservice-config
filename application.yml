@@ -1,11 +1,6 @@
 myapp: welcome
 
 spring:
-  config:
-    import: optional:configserver:http://localhost:8888
-  cloud:
-    config:
-      enabled: true
   main:
     allow-bean-definition-overriding: true
   data:
